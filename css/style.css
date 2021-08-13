@@ -584,8 +584,9 @@ label {
 
 .icon-box {
   position: absolute;
-  bottom: 93%;
-  left: 93%;
+  top: 0;
+  right: 0;
+  margin: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -626,7 +627,6 @@ label {
 
 .item {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .item .input:focus {
@@ -645,6 +645,12 @@ label {
   left: 12px;
   transform: translateY(12%);
   fill: var(--title-text-color);
+}
+
+.form-span {
+  margin-bottom: 4px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .input {
@@ -668,6 +674,10 @@ label {
 .comment:focus {
   border-color: var(--accent-color);
   outline: none;
+}
+
+.span-accept {
+  line-height: 1.71;
 }
 
 .policy-link {
