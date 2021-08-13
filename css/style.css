@@ -9,6 +9,7 @@
   --color-card: #eeeeee;
   --border-link: #afb1b8;
   --icon-close: #000000;
+  --background-color-buttons: #0b7ad5;
   --submit-button-shadow: rgba(0, 0, 0, 0.15);
   --footer-text-contacts: rgba(255, 255, 255, 0.6);
   --placeholder: rgba(117, 117, 117, 0.5);
@@ -238,6 +239,11 @@ label {
   line-height: 1.88;
 
   letter-spacing: 0.06em;
+}
+
+.primary-button:hover {
+  background-color: var(--background-color-buttons);
+  transition: background-color var(--main-transition);
 }
 
 /* Section */
@@ -477,7 +483,7 @@ label {
   margin-left: 70px;
 }
 
-.footer-tittle {
+.footer-title {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 20px;
@@ -611,7 +617,7 @@ label {
   fill: var(--accent-color);
 }
 
-.tittle {
+.title {
   color: var(--title-text-color);
   font-size: 20px;
   font-weight: 700;
@@ -629,9 +635,11 @@ label {
   position: relative;
 }
 
-.item .input:focus {
+.item .input:focus,
+.item .input:hover {
   border-color: var(--accent-color);
   outline: none;
+  transition: border var(--main-transition);
 }
 
 .form-field:focus-within > .icon-modal {
@@ -674,6 +682,7 @@ label {
 .comment:focus {
   border-color: var(--accent-color);
   outline: none;
+  transition: border var(--main-transition);
 }
 
 .span-accept {
@@ -715,6 +724,14 @@ label {
   margin-bottom: 30px;
 }
 
+.label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.label:nth-last-child(2) {
+  margin-bottom: 20px;
+}
+
 .checkbox:checked + .border-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -743,6 +760,11 @@ label {
   line-height: 1.88;
 
   letter-spacing: 0.06em;
+}
+
+.submit-button:hover {
+  background-color: var(--background-color-buttons);
+  transition: background-color var(--main-transition);
 }
 
 .form-field textarea::placeholder {
