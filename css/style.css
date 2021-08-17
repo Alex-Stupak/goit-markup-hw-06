@@ -731,12 +731,12 @@ label {
   margin-bottom: 30px;
 }
 
-.label-modal-margin:nth-last-child(3) {
-  margin-bottom: 20px;
+.label-list .label-modal-margin:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.label-modal-margin:not(:last-child) {
-  margin-bottom: 10px;
+.label-list .label-modal-margin:nth-last-child(2) {
+  margin-bottom: 20px;
 }
 
 .checkbox:checked + .border-icon {
